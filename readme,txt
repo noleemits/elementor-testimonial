@@ -1,0 +1,9 @@
+Create a tab/accordion style testimonial with Elementor. 
+
+1. Create a json file and paste the code from the json file. 
+2. In your customizer or wherever you prefer add the CSS.
+3. Copy the JS to your theme. 
+
+The json should contain the classes that you need, as long as you keep the same containers structure you can modify the content, for example. in the content section, you can add regular content and it should still work. 
+
+Feel free to use it as a base and customize it. 
