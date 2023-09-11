@@ -56,8 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
         event.stopPropagation();
         bioContents[index].style.display = "none";
         bioTriangles[index].style.display = "none"; // Hide the corresponding triangle
-        bioWrappers[index].style.height = "";
         bioWrappersImg[index].classList.add("active"); // Add "active" class
+        bioWrappers[index].style.height = ""; // Reset the height of the wrapper
       });
     }
   });
@@ -69,4 +69,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Close all bioContents initially
   closeAllBioContents();
+
+    // Add window resize event listener to close content on resize
+  let prevWindowWidth = window.innerWidth;
+
+  // Add window resize event listener to close content on resize (with a minimum resize threshold of 40px)
+  window.addEventListener("resize", () => {
+    const currentWindowWidth = window.innerWidth;
+    if (Math.abs(currentWindowWidth - prevWindowWidth) > 100) {
+      closeAllBioContents();
+      resetBioHeight();
+    }
+    prevWindowWidth = currentWindowWidth;
+  });
 });
