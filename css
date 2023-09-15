@@ -1,38 +1,26 @@
-/*Testimonial*/
-.testimonial-arrow{
-	position: relative;
+.tab-testimonial-triangle{
+	display: none;
+  width: 0; 
+  height: 0; 
+  border-left: 37px solid transparent;
+  border-right: 37px solid transparent;
+  border-bottom: 37px solid #f5f5f5;
+	margin:20px auto 0;
 }
-.testimonial-arrow:before{
-	content: '';
-	background-image: url(/wp-content/uploads/2023/09/unnamed-file.png);
-	background-repeat: no-repeat;
-	position: absolute;
-	transform: translate(87px, -33px);
+ .tab-testimonial-bio-content {
+	 display: none;
+      position: absolute;
+      left: 50%;
+	 transform: translatex(-50%);
+top: 0;
+  overflow: hidden;
+	 width: 1200px;
+	 max-width: 95%;
+ }
+.tab-testimonial-close{
+	cursor: pointer;
 }
-.testimonial-arrow:after{
-	content: '';
-	  height: 0px;
-  width: 0px;
-  position: absolute;
-  border-top: solid 25px transparent;
-  border-left: solid 25px #f5f5f5;
-  border-bottom: solid 25px transparent;
-	top: 50%;
-	right: 0;
-	transform: translate(100%, -50%);
-}
-
-@media only screen and (max-width: 767px){
-.testimonial-arrow:before{
-	transform: translate(31px, -33px);
-}
-	.testimonial-arrow:after{
-  border-right: solid 30px transparent;
-  border-left: solid 30px transparent;
-  border-top: solid 30px #f5f5f5;
-	top: 100%;
-	bottom: 0;
-		left: 50%;
-	transform: translate(-50%, 0);
-}
+.tab-testimonial-bio-wrapper {
+  transition: height 1s ease-in-out;
+	position: static;
 }
