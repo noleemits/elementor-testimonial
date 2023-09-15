@@ -11,16 +11,21 @@
 	 display: none;
       position: absolute;
       left: 50%;
-	 transform: translatex(-50%);
-top: 0;
-  overflow: hidden;
-	 width: 1200px;
-	 max-width: 95%;
+      transform: translatex(-50%);
+      top: 0;
+      overflow: hidden;
+      width: 1200px;
+      max-width: 95%;
  }
 .tab-testimonial-close{
 	cursor: pointer;
 }
-.tab-testimonial-bio-wrapper {
-  transition: height 1s ease-in-out;
-	position: static;
+.tab-testimonial-bio-wrapper .elementor-widget-image.active{
+	cursor: pointer;
+}
+.tab-testimonial-triangle{
+	display: none;
+        width: 0; 
+        top: 0;
+	cursor: pointer;
 }
